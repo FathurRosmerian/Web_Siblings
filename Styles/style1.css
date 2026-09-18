@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #897763;
 }
@@ -113,4 +117,22 @@ nav {
     line-height: 1.4;
     text-align: justify;
     margin-right: 5px;
+}
+
+.title {
+    background-color: #fddd5a;
+    width: 20rem;
+    justify-items: center;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.title h1 {
+    font-family: "Poppins", sans-serif;
+    color: #897763;
+    font-size: 3rem;
+}
+
+#katalog {
+    margin: 20rem auto 0;
 }
