@@ -136,3 +136,68 @@ nav {
 #katalog {
     margin: 20rem auto 0;
 }
+
+.coming-soon {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("images/cover.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* Efek blur + gelap */
+.coming-soon::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+
+    background: inherit;
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(8px);
+    transform: scale(1.05);
+
+    z-index: 0;
+}
+
+/* Lapisan gelap */
+.coming-soon::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    z-index: 1;
+}
+
+/* Tulisan */
+.coming-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+}
+
+.coming-content h1 {
+    font-size: 70px;
+    letter-spacing: 8px;
+    margin: 0;
+
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.coming-content p {
+    font-size: 20px;
+    margin-top: 15px;
+}
